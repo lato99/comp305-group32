@@ -11,3 +11,18 @@ Note: Our first git commit is the LoongyNumber.java class inside the comp305/com
 
 TO DO :
 Find how to select which student's number if there are numbers that more than one student has. (Two or more students have the same number.) //With the algorithm we found on Wednesday May 19 2021, we believe that this problem is solved.
+
+Find how to evaluate multidigit numbers students may provide. We can use modulo 10 to evaluate each digit and check if the previous digit is one less than the next one. Discard number if it's not.
+
+
+Potential Algorithms we thought of:
+1) Create a struct "Number" for each number which has 2 variables; value(value of number) and student(specifies which student the number came from). Afterwards put every number in an array and sort them in increasing order by their values. Evaluate the longest consecutive number sequence where each Number has a different student value (and therefore comes from a different student).
+
+2) Create a 2D array and fill with students and their 6 numbers. Start from [0][0] and move forward until/if 1 is found. If found try to find 2 from the arrays excluding the one we find 1 in. Repeat process with 2-3-...-9 until max length is found. For less computations we can make it so if current_max_length > 9-(number we came up to evaluate) we return the current_max_length. For example if current_max_length=5 if we came up to 5 to evaluate we can directly return current_max_length, as a sequence which starts from 5 can max be of length 5 (56789) which doesn't change our desired outcome. Sequences starting from 6-7-8-9 are even shorter.
+
+Downside of these two methods: Could not find how to evaluate numbers with same values that come from different students, how do we choose which student to take the number from?
+
+3) Put every number in a tree. Every tree node stores which student the number belongs to and the tree itself is sorted by the value of the number. Take the longest consecutive  branch from the root to the end leaf to find max length. If no consecutive found recursively search left child and right child.
+
+Downside: Hard to implement.
+
