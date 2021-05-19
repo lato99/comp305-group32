@@ -10,4 +10,4 @@ Note: Our first git commit is the LoongyNumber.java class inside the comp305/com
 
 
 TO DO :
-Find how to select which student's number if there are numbers that more than one student has. (Two or more students have the same number.)
+Find how to select which student's number if there are numbers that more than one student has. (Two or more students have the same number.) //With the algorithm we found on Wednesday May 19 2021, we believe that this problem is solved.
