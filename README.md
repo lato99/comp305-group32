@@ -5,7 +5,7 @@
 //Wednesday May 19 2021,  We came up with another algorithm but. Here is the algorithm:
 Put every number in a graph(each number of a student is considered as the vertices)
 and the edge weights are always 1. There is only edge from vertex v1 to v2 if and only if v1== v2+1 && if v1 and v2 are the numbers from different students.
-
+//Creating a new class for storing numbers, in order to link the number to the belonged student. This way every number can be connected to the student, and when finding the maximum length, it would be more optimal to find check whether the next number should be considered for the continous subsequence or not. However, this also complicates the structure implementatons.
 Note: Our first git commit is the LoongyNumber.java class inside the comp305/comp305-project file. ( We did this accidentaly without knowing, but our second and further commits will be directly in the LoongyNumber.java (which is not in the comp305/comp305-project file.).
 
 
