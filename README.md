@@ -1,4 +1,5 @@
 # comp305-group32
+//Note: Our code is LoongyNumber.java. We first started with LoongyNumberOld.java which is in comp305/305_project, but then we changed to LoongyNumber.java (because of technical difficulties )
 //Sunday May 16 2021, We have came up with an efficient algorithm.
 //Monday May 17 2021, We have initialized the necessary variables, imported necessary file reading classes, read the file and stored the necessary data for the algorithm.
 //Tuesday May 18 2021, we wrote the code for the algorithm, that has no erros, but it does not give the desired output for the given input file(provided from the google drive)
@@ -23,6 +24,8 @@ Potential Algorithms we thought of:
 Downside of these two methods: Could not find how to evaluate numbers with same values that come from different students, how do we choose which student to take the number from?
 
 3) Put every number in a tree. Every tree node stores which student the number belongs to and the tree itself is sorted by the value of the number. Take the longest consecutive  branch from the root to the end leaf to find max length. If no consecutive found recursively search left child and right child.
+
+4)There is also a different algorithm that can be followed with arrays. That is using AugmentedNumbers class, where every number of each student can be converted to a member of this class, so that every number can be conected to the student that owns it. We did not implemented this because we could not manage to get better accuracy and efficency from the normal int implementation.
 
 Downside: Hard to implement.
 
