@@ -4,7 +4,7 @@ import java.util.Scanner; // Scanner for reading files
 
 
 
-public class LoongyNumber{
+public class LoongyNumberOld{
 
      public static void main(String []args){
 
