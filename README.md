@@ -29,3 +29,4 @@ Downside of these two methods: Could not find how to evaluate numbers with same 
 
 Downside: Hard to implement.
 
+The program runtime in miliseconds: 896060856 (We obtained it with System.nanoTime() function.)
